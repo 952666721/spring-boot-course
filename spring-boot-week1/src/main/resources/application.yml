@@ -1,2 +1,27 @@
 server:
   port: 8081
+
+spring:
+  application:
+    name: quickStart
+my:
+  mood:
+    today: 周五
+    content: 期待周末
+    author: "小程序员"
+
+  feature:
+    helloSwitch: true
+    closeMsq: "该接口正在维护，10分钟后再来吧!"
+
+
+sqq:
+  sms:
+    ccp:
+      serverIp: app.cloopen.com
+      port: 8883
+      accountSId: 2c94811c9860a9c4019917b644701d7a
+      accountToken: d591a5eee1a5467bae3e36494b24bcf3
+      appId: 2c94811c9860a9c4019917b645e91d82
+      templateId: 1
+
