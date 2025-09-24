@@ -1,0 +1,26 @@
+server:
+  port: 8084
+
+
+spring:
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+      database: 0
+      password:
+      lettuce:
+        pool:
+          min-idle: 10
+          max-idle: 20
+          max-active: 50
+
+qqs:
+  sms:
+    ccp:
+      serverIp: app.cloopen.com
+      port: 8883
+      accountSId: 2c94811c9860a9c4019917b644701d7a
+      accountToken: d591a5eee1a5467bae3e36494b24bcf3
+      appId: 2c94811c9860a9c4019917b645e91d82
+      templateId: 1

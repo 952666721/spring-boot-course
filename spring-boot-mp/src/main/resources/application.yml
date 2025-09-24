@@ -1,0 +1,28 @@
+spring:
+  profiles:
+    active: test
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true # 数据库字段下划线转驼峰
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl # SQL日志输出
+  global-config:
+    db-config:
+      # 主键类型自增
+      id-type: auto
+      logic-delete-field: deleted # 逻辑删除字段
+      logic-delete-value: 1 # 删除标识值
+      logic-not-delete-value: 0 # 未删除标识值
+      # 字段填充策略，默认为非空时填充
+      insert-strategy: not_null
+      update-strategy: not_null
+  #Mapper XML 文件位置
+  mapper-locations: classpath*:/mapper/**/*.xml
+  # 实体类别名
+  type-aliases-package: top.qqs.boot.mp.entity
+
+logging:
+  level:
+    top.qqs.boot.mp: debug
+    com.baomidou.mybatisplus: debug
+
