@@ -39,10 +39,11 @@ public class WebMvcConfig implements WebMvcConfigurer {
                 .excludePathPatterns("/user/login", "/user/register")
                 // 晚于 TimeStatInterceptor 执行
                 .order(3);
-//        registry.addInterceptor(paramValidateInterceptor)
-//                .addPathPatterns("/api/*")
-//                // 优先于权限拦截器
-//                .order(0);
+        // 注册参数校验拦截器
+        registry.addInterceptor(paramValidateInterceptor)
+                .addPathPatterns("/api/*")
+               // 优先于权限拦截器
+                .order(0);
     }
 //    @Override
 //    public void addCorsMappings(CorsRegistry registry) {

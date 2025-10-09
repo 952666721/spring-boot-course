@@ -29,6 +29,7 @@
         <module>spring-boot-pay</module>
         <module>spring-boot-redis</module>
         <module>spring-boot-filter-interceptor</module>
+        <module>spring-boot-schedule</module>
     </modules>
 
     <properties>
@@ -71,6 +72,7 @@
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
+
     </dependencies>
     <!--统一管理版本-->
     <dependencyManagement>
